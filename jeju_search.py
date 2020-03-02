@@ -9,7 +9,7 @@ curs = conn.cursor(pymysql.cursors.DictCursor)
 #버튼 이벤트로 받은 단어를 받을 변수(임시로 그냥 프롬프트에서 입력받는 것으로 했음)
 search=input()
 
-#SQL문으로 검색
+#SQL문으로 검색(필요하다고 생각한 정보만 검색했음)
 sql = "select category, loc_name, tel, address from jeju where category=%s or loc_name=%s"
 curs.execute(sql, (search, search))
 
@@ -21,3 +21,6 @@ for row in rows:
  
 # Connection 닫기
 conn.close()
+
+#아마 검색한 내용을 r로 시각화하려면 검색한 내용을 따로 csv파일로 저장해서 그 파일로 r프로그래밍 해야할 것 같은데ㅠㅠ
+#너무 비효율적이라 이거 말고 다른 방법이 있을텐데 나는 우선 모르겠음
