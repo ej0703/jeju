@@ -2,3 +2,4 @@ pip install pymysql	//mysql 연결하는거
 pip install requests	//크롤링 웹 요청
 pip install xmltodict	//xml -> json 파싱
 pip install json
+dd
