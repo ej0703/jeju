@@ -10,14 +10,14 @@ curs = conn.cursor(pymysql.cursors.DictCursor)
 search=input()
 
 #SQL문으로 검색(필요하다고 생각한 정보만 검색했음)
-sql = "select category, loc_name, tel, address from jeju where category=%s or loc_name=%s"
-curs.execute(sql, (search, search))
+sql = "select category, loc_name, tel, address from jeju where category like '%"+search+"%'"+" or loc_name like '%"+search+"%';"
+curs.execute(sql)
 
 # 데이타 Fetch
 rows = curs.fetchall()
 for row in rows:
-    print(row)
-    #print(row['category'], row['loc_name'], row['tel'], row['address'])
+    #print(row)
+    print(row['category'], row['loc_name'], row['tel'], row['address'])
  
 # Connection 닫기
 conn.close()
