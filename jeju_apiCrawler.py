@@ -27,4 +27,4 @@ jsonString_parking = json.dumps(dict_parking['ServiceResult']['msgBody'], ensure
 jsonObj_parking = json.loads(jsonString_parking)
 
 for list in jsonObj_parking['itemList']:
-    print(list['ISTL_LCTN_ADDR'],list['WHOL_NPLS'],list['GNRL_RMND_PRZN_NUM'])
+    print(list['ISTL_LCTN_ADDR'],list['WHOL_NPLS'],list['GNRL_RMND_PRZN_NUM'],list['HNDC_RMND_PRZN_NUM'])
