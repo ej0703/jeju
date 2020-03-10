@@ -19,9 +19,10 @@ rows = curs.fetchall()
 for row in rows:
     #print(row) #해당 로우들 전체 출력
     print(row['category'], row['loc_name'], row['tel'], row['address'])
-    # 검색결과 csv 파일 저장
-    dataframe = pd.DataFrame(rows)
-    dataframe.to_csv("검색결과.csv",header=False, index=False, encoding ='euc-kr')
+
+# 검색결과 csv 파일 저장
+dataframe = pd.DataFrame(rows)
+dataframe.to_csv("검색결과.csv",header=False, index=False, encoding ='euc-kr')
  
 #Connection 닫기
 conn.close()
