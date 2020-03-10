@@ -2,7 +2,7 @@ import pymysql
 import pandas as pd
 
 #DB 연동 -MySQL
-conn = pymysql.connect(host='192.168.0.52', user='root', password='1234', db='jeju_info', charset='utf8')
+conn = pymysql.connect(host='34.64.133.169', user='root', password='1234', db='jeju', charset='utf8')
 
 #Connection 으로부터 Dictoionary Cursor 생성
 curs = conn.cursor(pymysql.cursors.DictCursor)
