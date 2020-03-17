@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5da3ae74bff490a9888793a4a1eefb4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f5da3ae74bff490a9888793a4a1eefb4" ></div>
+        
+</body>
+<script>    
+    
+            var map_f5da3ae74bff490a9888793a4a1eefb4 = L.map(
+                "map_f5da3ae74bff490a9888793a4a1eefb4",
+                {
+                    center: [33.389398, 126.541236],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d4c5fe35f65451d8fec1fcaac2fa65c = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+            var circle_marker_f5130116f04445c99017ebe42ba20367 = L.circleMarker(
+                [33.4845, 126.5007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_0453287790ec4bcf995a21840f7e439c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b39366698a14349a80e5a6e541a0b79 = $(`<div id="html_8b39366698a14349a80e5a6e541a0b79" style="width: 100.0%; height: 100.0%;">설문대여성문화센터 주차장내2</div>`)[0];
+            popup_0453287790ec4bcf995a21840f7e439c.setContent(html_8b39366698a14349a80e5a6e541a0b79);
+        
+
+        circle_marker_f5130116f04445c99017ebe42ba20367.bindPopup(popup_0453287790ec4bcf995a21840f7e439c)
+        ;
+
+        
+    
+    
+            var circle_marker_11cd75c71e8843d0867db5b16c43c0ae = L.circleMarker(
+                [33.4889, 126.4906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_34c3561387df4f2ab20d92ac1716eff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e66a05d09d44e76a984d76e47698f77 = $(`<div id="html_6e66a05d09d44e76a984d76e47698f77" style="width: 100.0%; height: 100.0%;">로얄쇼핑센터 앞 주차장내0</div>`)[0];
+            popup_34c3561387df4f2ab20d92ac1716eff4.setContent(html_6e66a05d09d44e76a984d76e47698f77);
+        
+
+        circle_marker_11cd75c71e8843d0867db5b16c43c0ae.bindPopup(popup_34c3561387df4f2ab20d92ac1716eff4)
+        ;
+
+        
+    
+    
+            var circle_marker_6525f483673941648c6dd89c9b634fc4 = L.circleMarker(
+                [33.4908, 126.4866],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_fe98eb3c210343959a6bbdfdd5300a7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c5de0abfdf144f59f6421faea53a5e9 = $(`<div id="html_4c5de0abfdf144f59f6421faea53a5e9" style="width: 100.0%; height: 100.0%;">롯데시티호텔 뒤 주차장내4</div>`)[0];
+            popup_fe98eb3c210343959a6bbdfdd5300a7d.setContent(html_4c5de0abfdf144f59f6421faea53a5e9);
+        
+
+        circle_marker_6525f483673941648c6dd89c9b634fc4.bindPopup(popup_fe98eb3c210343959a6bbdfdd5300a7d)
+        ;
+
+        
+    
+    
+            var circle_marker_ae5707a808f4453e98deb828bc677fc0 = L.circleMarker(
+                [33.4794, 126.4772],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_6155ce0a142f4658abee19dab86b44dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5b19cd029ba4cf9a9dae73d4c193378 = $(`<div id="html_a5b19cd029ba4cf9a9dae73d4c193378" style="width: 100.0%; height: 100.0%;">탐라도서관 주차장내3</div>`)[0];
+            popup_6155ce0a142f4658abee19dab86b44dc.setContent(html_a5b19cd029ba4cf9a9dae73d4c193378);
+        
+
+        circle_marker_ae5707a808f4453e98deb828bc677fc0.bindPopup(popup_6155ce0a142f4658abee19dab86b44dc)
+        ;
+
+        
+    
+    
+            var circle_marker_2bba7031987c453eaa1c3afa6ab783f7 = L.circleMarker(
+                [33.4852, 126.4882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_2975cd254c75447f9aec76c7e7bf5b1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f67dd50806604eb781e288ae17998de3 = $(`<div id="html_f67dd50806604eb781e288ae17998de3" style="width: 100.0%; height: 100.0%;">국기로 대림아파트 동측 주차장내0</div>`)[0];
+            popup_2975cd254c75447f9aec76c7e7bf5b1f.setContent(html_f67dd50806604eb781e288ae17998de3);
+        
+
+        circle_marker_2bba7031987c453eaa1c3afa6ab783f7.bindPopup(popup_2975cd254c75447f9aec76c7e7bf5b1f)
+        ;
+
+        
+    
+    
+            var circle_marker_f3ebb0382e8c4d8a8e13b409b9246b9d = L.circleMarker(
+                [33.4753, 126.5154],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_2622be014d9b4558bcf6e0c693885d26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58d91d41e37d46df935176e82f443895 = $(`<div id="html_58d91d41e37d46df935176e82f443895" style="width: 100.0%; height: 100.0%;">제주아트센터 입구1</div>`)[0];
+            popup_2622be014d9b4558bcf6e0c693885d26.setContent(html_58d91d41e37d46df935176e82f443895);
+        
+
+        circle_marker_f3ebb0382e8c4d8a8e13b409b9246b9d.bindPopup(popup_2622be014d9b4558bcf6e0c693885d26)
+        ;
+
+        
+    
+    
+            var circle_marker_3508d46e5a644f1ab1793c2c0ebd35d5 = L.circleMarker(
+                [33.5112, 126.5432],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_ca38ec3414e4454ab75e673123b514ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a33646ca18f34382920a4901f4ffaad1 = $(`<div id="html_a33646ca18f34382920a4901f4ffaad1" style="width: 100.0%; height: 100.0%;">제주영락교회 맞은편2</div>`)[0];
+            popup_ca38ec3414e4454ab75e673123b514ab.setContent(html_a33646ca18f34382920a4901f4ffaad1);
+        
+
+        circle_marker_3508d46e5a644f1ab1793c2c0ebd35d5.bindPopup(popup_ca38ec3414e4454ab75e673123b514ab)
+        ;
+
+        
+    
+    
+            var circle_marker_9cfd6c7bef454d419dea13b3f313942c = L.circleMarker(
+                [33.5004, 126.5297],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_b2a5219fb4de491da05cf75705b13268 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1185962688a4a0387d8f47ea6c82afc = $(`<div id="html_d1185962688a4a0387d8f47ea6c82afc" style="width: 100.0%; height: 100.0%;">제주벤처마루 앞8</div>`)[0];
+            popup_b2a5219fb4de491da05cf75705b13268.setContent(html_d1185962688a4a0387d8f47ea6c82afc);
+        
+
+        circle_marker_9cfd6c7bef454d419dea13b3f313942c.bindPopup(popup_b2a5219fb4de491da05cf75705b13268)
+        ;
+
+        
+    
+    
+            var circle_marker_f2974671bcb346fea4fcc9e621748605 = L.circleMarker(
+                [33.4998, 126.5178],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_f5da3ae74bff490a9888793a4a1eefb4);
+        
+    
+        var popup_80da74c05a4a4e3094d67a05492d3ecb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad2de1fb428d4a04af3ea42856dcfa3a = $(`<div id="html_ad2de1fb428d4a04af3ea42856dcfa3a" style="width: 100.0%; height: 100.0%;">오라지구대 옆 공영주차장내7</div>`)[0];
+            popup_80da74c05a4a4e3094d67a05492d3ecb.setContent(html_ad2de1fb428d4a04af3ea42856dcfa3a);
+        
+
+        circle_marker_f2974671bcb346fea4fcc9e621748605.bindPopup(popup_80da74c05a4a4e3094d67a05492d3ecb)
+        ;
+
+        
+    
+</script>

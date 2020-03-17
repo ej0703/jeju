@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce90c0e3d207465181535aaf47fe0089 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ce90c0e3d207465181535aaf47fe0089" ></div>
+        
+</body>
+<script>    
+    
+            var map_ce90c0e3d207465181535aaf47fe0089 = L.map(
+                "map_ce90c0e3d207465181535aaf47fe0089",
+                {
+                    center: [33.389398, 126.541236],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5c63a841e5149639f0474a508fa28fb = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+            var circle_marker_471e89f7df014b728f62c52afcd52e09 = L.circleMarker(
+                [33.235071000000005, 126.562554],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_787f75e482f947579bfc4bbddfcf3a87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0043a928593e4ea98963a55a9041d806 = $(`<div id="html_0043a928593e4ea98963a55a9041d806" style="width: 100.0%; height: 100.0%;">새섬</div>`)[0];
+            popup_787f75e482f947579bfc4bbddfcf3a87.setContent(html_0043a928593e4ea98963a55a9041d806);
+        
+
+        circle_marker_471e89f7df014b728f62c52afcd52e09.bindPopup(popup_787f75e482f947579bfc4bbddfcf3a87)
+        ;
+
+        
+    
+    
+            var circle_marker_e5cff74a11be4f4ca64f5b32d6a41d41 = L.circleMarker(
+                [33.241946, 126.56192800000001],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_84c31b48a94a4088b0ec326f8567885e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7ddbfc835d348b396c12fd9465c81fe = $(`<div id="html_a7ddbfc835d348b396c12fd9465c81fe" style="width: 100.0%; height: 100.0%;">새섬갈비</div>`)[0];
+            popup_84c31b48a94a4088b0ec326f8567885e.setContent(html_a7ddbfc835d348b396c12fd9465c81fe);
+        
+
+        circle_marker_e5cff74a11be4f4ca64f5b32d6a41d41.bindPopup(popup_84c31b48a94a4088b0ec326f8567885e)
+        ;
+
+        
+    
+    
+            var circle_marker_41394bea92874de1811f326d85992861 = L.circleMarker(
+                [33.241996, 126.561641],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_4d92528db7214c738440d8fa9538b21e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_346a0d195ee54f2db5fe3c88f8ae355b = $(`<div id="html_346a0d195ee54f2db5fe3c88f8ae355b" style="width: 100.0%; height: 100.0%;">새섬갈비정문</div>`)[0];
+            popup_4d92528db7214c738440d8fa9538b21e.setContent(html_346a0d195ee54f2db5fe3c88f8ae355b);
+        
+
+        circle_marker_41394bea92874de1811f326d85992861.bindPopup(popup_4d92528db7214c738440d8fa9538b21e)
+        ;
+
+        
+    
+    
+            var circle_marker_2dfab457ad184954a72befbc448936ff = L.circleMarker(
+                [33.239629, 126.55880400000001],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_c87ff080951941a18c9034d7a68f80b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f864fa6b6fc246ffb9be90ee8feb8c24 = $(`<div id="html_f864fa6b6fc246ffb9be90ee8feb8c24" style="width: 100.0%; height: 100.0%;">새섬방파제입구</div>`)[0];
+            popup_c87ff080951941a18c9034d7a68f80b1.setContent(html_f864fa6b6fc246ffb9be90ee8feb8c24);
+        
+
+        circle_marker_2dfab457ad184954a72befbc448936ff.bindPopup(popup_c87ff080951941a18c9034d7a68f80b1)
+        ;
+
+        
+    
+    
+            var circle_marker_41c1f0a54c9e487eb24290daddb33749 = L.circleMarker(
+                [33.241946, 126.56221599999999],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_ec620883a097470ca76541e600479220 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ff720b3c6644441ab9961db033ce799 = $(`<div id="html_9ff720b3c6644441ab9961db033ce799" style="width: 100.0%; height: 100.0%;">새섬갈비후문</div>`)[0];
+            popup_ec620883a097470ca76541e600479220.setContent(html_9ff720b3c6644441ab9961db033ce799);
+        
+
+        circle_marker_41c1f0a54c9e487eb24290daddb33749.bindPopup(popup_ec620883a097470ca76541e600479220)
+        ;
+
+        
+    
+    
+            var circle_marker_6c92d9ff7fb343b6a089acde5b7c2197 = L.circleMarker(
+                [33.241896000000004, 126.562603],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_6d11db6dfd484eb294a31ca519ed3ba4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b23dcfd90fb4445e855543021698c5c3 = $(`<div id="html_b23dcfd90fb4445e855543021698c5c3" style="width: 100.0%; height: 100.0%;">새섬호텔</div>`)[0];
+            popup_6d11db6dfd484eb294a31ca519ed3ba4.setContent(html_b23dcfd90fb4445e855543021698c5c3);
+        
+
+        circle_marker_6c92d9ff7fb343b6a089acde5b7c2197.bindPopup(popup_6d11db6dfd484eb294a31ca519ed3ba4)
+        ;
+
+        
+    
+    
+            var circle_marker_d93936c9a03441a2aad076af7da91ae6 = L.circleMarker(
+                [33.241862, 126.56256599999999],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "coral", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_ce90c0e3d207465181535aaf47fe0089);
+        
+    
+        var popup_0f863d8ae24f42c9910ae896790e9429 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddb034c428eb42199dbdb44e5b77122b = $(`<div id="html_ddb034c428eb42199dbdb44e5b77122b" style="width: 100.0%; height: 100.0%;">새섬리조트</div>`)[0];
+            popup_0f863d8ae24f42c9910ae896790e9429.setContent(html_ddb034c428eb42199dbdb44e5b77122b);
+        
+
+        circle_marker_d93936c9a03441a2aad076af7da91ae6.bindPopup(popup_0f863d8ae24f42c9910ae896790e9429)
+        ;
+
+        
+    
+</script>

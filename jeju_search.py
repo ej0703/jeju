@@ -22,7 +22,7 @@ for row in rows:
 
 # 검색결과 csv 파일 저장
 dataframe = pd.DataFrame(rows)
-dataframe.to_csv("검색결과.csv",header=False, index=False, encoding ='euc-kr')
+dataframe.to_csv("검색결과.csv",header=True, index=False, encoding ='euc-kr')
  
 #Connection 닫기
 conn.close()
