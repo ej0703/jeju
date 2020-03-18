@@ -2,8 +2,8 @@ use jeju_info;
 
 CREATE TABLE jeju (
 loc_no INT NOT NULL PRIMARY KEY,
-loc_x DOUBLE(10,4) NOT NULL,
-loc_y DOUBLE(10,4) NOT NULL,
+y DOUBLE(10,4) NOT NULL,
+x DOUBLE(10,4) NOT NULL,
 category VARCHAR(20) NOT NULL,
 loc_name VARCHAR(100) NOT NULL,
 tel VARCHAR(20),
@@ -16,4 +16,4 @@ LOAD DATA LOCAL INFILE "C:\\Users\\User\\Desktop\\download\\jeju_info.csv" INTO 
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES
-(loc_no,loc_x,loc_y,category,loc_name,tel,address);
+(loc_no,x,y,category,loc_name,tel,address);
