@@ -92,11 +92,7 @@ class Ui_infoWidget(object):
         search = self.lineEdit.text()
 
         #SQL문으로 검색(필요하다고 생각한 정보만 검색했음)
-<<<<<<< HEAD
         sql = "select x, y, category, loc_name, tel, address from jeju where category like '%"+search+"%' or loc_name like '%"+search+"%';"
-=======
-        sql = "select x as x, y as y, category as category, loc_name as loc_name, tel as tel, address as address from jeju where category like '%"+search+"%'"+" or loc_name like '%"+search+"%';"
->>>>>>> 1a34d90b10cb804ac915602c46f73d9b019fc059
         curs.execute(sql)
 
         #데이타 Fetch
