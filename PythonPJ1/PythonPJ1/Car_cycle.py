@@ -42,7 +42,7 @@ class Ui_Carcycle(object):
         #실시간 주차장 현황 tablewidget
         self.carTable = QtWidgets.QTableWidget(Carcycle)
         self.carTable.setGeometry(QtCore.QRect(520, 170, 500, 255))
-        self.carTable.setRowCount(7)
+        self.carTable.setRowCount(8)
         self.carTable.setColumnCount(5)
         self.carTable.setObjectName("carTable")
         car_colum_headers = ['주차장명','주소','총 주차 수','잔여 자리','장애인 잔여 자리'] #테이블 헤더
@@ -129,11 +129,10 @@ class Ui_Carcycle(object):
         
         df_park = pd.DataFrame(jsonObj_parking['itemList'])
         df_park = df_park.loc[:,['ISTL_LCTN_ADDR','WHOL_NPLS','GNRL_RMND_PRZN_NUM']]
-        print(df_park)
 
         # 지도에 위치를 마킹하기 위해 x,y좌표를 수동으로 입력해줌
-        df_p1 = pd.DataFrame({'x':[33.516518,33.504720,33.494673,33.494823,33.249802,33.512080,33.512090]}) # x좌표 lat
-        df_p2 = pd.DataFrame({'y':[126.525296,126.541789,126.535459,126.535294,126.562276,126.528340,126.528215]}) # y좌표 lon
+        df_p1 = pd.DataFrame({'x':[33.516518,33.504720,33.494673,33.494823,33.249802,33.512080,33.512090,33.5159351]}) # x좌표 lat
+        df_p2 = pd.DataFrame({'y':[126.525296,126.541789,126.535459,126.535294,126.562276,126.528340,126.528215,126.5287851]}) # y좌표 lon
 
         #좌표를 리스트에 추가함
         df_park = pd.concat([df_park,df_p1],axis=1)
@@ -189,7 +188,8 @@ class Ui_Carcycle(object):
                     '제주시 이도2동 1992-7',
                     '서귀포시 서귀동 291-3',
                     '제주시 일도1동 1230-5',
-                    '제주시 일도1동 1103']
+                    '제주시 일도1동 1103',
+                    '제주 제주시 건입동 1328-6']
         result3=[]
         result4=[]
         result5=[]
