@@ -1,0 +1,19 @@
+use jeju_info;
+
+CREATE TABLE jeju (
+loc_no INT NOT NULL PRIMARY KEY,
+y DOUBLE(10,4) NOT NULL,
+x DOUBLE(10,4) NOT NULL,
+category VARCHAR(20) NOT NULL,
+loc_name VARCHAR(100) NOT NULL,
+tel VARCHAR(20),
+address VARCHAR(100)
+);
+
+ALTER TABLE jeju convert to charset utf8;
+
+LOAD DATA LOCAL INFILE "C:\\Users\\User\\Desktop\\download\\jeju_info.csv" INTO TABLE jeju 
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(loc_no,x,y,category,loc_name,tel,address);
