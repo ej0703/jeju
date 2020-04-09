@@ -18,6 +18,7 @@ import functools
 import io
 import sys
 
+
 class Ui_infoWidget(object):
 
     def setupUi(self, infoWidget):
@@ -163,8 +164,9 @@ class Ui_infoWidget(object):
         # HTML 파일로 저장  
         jeju_map.save('./jeju_locationEX.html')
        
+
         # HTML 파일 map으로 나타내기
-        url = QtCore.QUrl.fromLocalFile('C:/Users/60414/source/repos/PythonPJ1/PythonPJ1/jeju_locationEX.html')
+        url = QtCore.QUrl.fromLocalFile('/jeju_locationEX.html')
         self.info_webEngineView.load(url)
     
 

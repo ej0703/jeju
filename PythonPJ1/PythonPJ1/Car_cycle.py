@@ -175,7 +175,7 @@ class Ui_Carcycle(object):
         jeju_map.save('./jeju_park.html')
         
         #HTML파일 map으로 나타내기
-        url = QtCore.QUrl.fromLocalFile('C:/Users/60414/source/repos/PythonPJ1/PythonPJ1/jeju_park.html')
+        url = QtCore.QUrl.fromLocalFile('/jeju_park.html')
         self.car_webEngineView.load(url)
     
 
@@ -304,7 +304,7 @@ class Ui_Carcycle(object):
         #HTML 파일로 저장   
         jeju_map.save('./jeju_cycle.html')      
         #HTML 파일 map에 불러오기
-        url = QtCore.QUrl.fromLocalFile('C:/Users/60414/source/repos/PythonPJ1/PythonPJ1/jeju_cycle.html')
+        url = QtCore.QUrl.fromLocalFile('/jeju_cycle.html')
         self.cycle_webEngineView.load(url)
     
         #크롤링한 값을 리스트에 입력 & 딕셔너리로 변경
